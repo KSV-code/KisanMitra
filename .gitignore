@@ -34,3 +34,6 @@ Thumbs.db
 # Local datasets and large files
 data/raw/*
 data/processed/*
+
+data/crop_recommendation.csv
+data/crop_recommendation_cleaned.csv
