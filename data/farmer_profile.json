@@ -1,0 +1,17 @@
+{
+    "state": "",
+    "owns_cultivable_land": true,
+    "income_tax_payer": false,
+    "government_employee": false,
+    "monthly_pension": 0,
+    "practicing_professional": false,
+    "nri_farmer": false,
+    "grows_notified_crop": true,
+    "in_notified_area": true,
+    "has_insurable_interest": true,
+    "has_required_documents": true,
+    "is_farmer": true,
+    "has_cultivation_activity": true,
+    "requires_soil_testing": true,
+    "practices_rainfed_agriculture": true
+}

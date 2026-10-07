@@ -1,0 +1,135 @@
+[
+  {
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi",
+    "short_name": "PM-KISAN",
+    "category": "Income Support",
+    "target_beneficiaries": "Landholding farmer families with cultivable land",
+    "benefit": "Rs. 6000 per year",
+    "eligibility": "Farmer family must own cultivable land as per the land records of the concerned State/UT",
+    "eligibility_rules": {
+            "owns_cultivable_land": true,
+            "institutional_land_holder": false,
+            "income_tax_payer": false,
+            "government_employee_excluded": true,
+            "monthly_pension_below_10000": true,
+            "practicing_professional": false,
+            "nri_farmer": false
+        },
+    "exclusions": [
+        "Institutional land holders",
+        "Former or present holders of constitutional posts",
+        "Former or present Ministers and Members of Parliament or State Legislatures",
+        "Serving or retired government officers and employees, with specified exceptions",
+        "Retired pensioners receiving monthly pension of Rs. 10000 or more, with specified exceptions",
+        "Persons who paid income tax in the last assessment year",
+        "Practicing registered professionals such as Doctors, Engineers, Lawyers, Chartered Accountants and Architects",
+        "Non-resident Indians (NRIs)"
+        ],
+    "required_information": [
+        "State",
+        "District",
+        "Sub-District/Block",
+        "Village",
+        "Farmer Name",
+        "Aadhaar Number or alternative identity proof where applicable",
+        "Gender",
+        "Category",
+        "IFSC Code",
+        "Bank Account Number"
+        ],
+    "recommendation_reason": "The farmer may be eligible if they are part of a landholding farmer family with cultivable land and do not fall under the scheme's exclusion categories.",
+    "next_action": "Verify that the farmer's cultivable land ownership is correctly recorded in the State/UT land records and complete the required beneficiary registration process.",
+    "source": "PM-KISAN Operational Guidelines, Revised as on 29.03.2020"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana",
+    "short_name": "PMFBY",
+    "category": "Crop Insurance",
+    "target_beneficiaries": "Farmers growing notified crops in notified areas",
+    "benefit": "Crop insurance coverage against specified crop losses",
+    "eligibility": "Farmers including sharecroppers and tenant farmers growing notified crops in notified areas may be covered if they have an insurable interest and submit the required documents.",
+    "eligibility_rules": {
+        "grows_notified_crop": true,
+        "in_notified_area": true,
+        "has_insurable_interest": true,
+        "has_required_documents": true
+    },
+    "required_information": [
+        "Farmer details",
+        "Crop details",
+        "Notified area details",
+        "Land or tenancy documents",
+        "Aadhaar",
+        "Crop sowing declaration"
+    ],
+    "recommendation_reason": "The farmer may be eligible for PMFBY if they grow a notified crop in a notified area and have the required insurable interest and documents.",
+    "next_action": "Verify that the crop and area are notified under PMFBY and prepare the required land or tenancy documents and crop declaration.",
+    "source": "PMFBY Operational Guidelines"
+  },
+  {
+    "scheme_name": "Kisan Credit Card",
+    "short_name": "KCC",
+    "category": "Agricultural Credit",
+    "target_beneficiaries": "Farmers including owner cultivators, tenant farmers, oral lessees and sharecroppers",
+    "benefit": "Timely credit support for cultivation and agricultural needs",
+    "eligibility": "Farmers who are owner cultivators, tenant farmers, oral lessees or sharecroppers may be eligible for KCC.",
+    "eligibility_rules": {
+        "is_farmer": true,
+        "has_cultivation_activity": true
+    },
+    "required_information": [
+        "Farmer details",
+        "Identity proof",
+        "Address proof",
+        "Landholding or cultivation proof",
+        "Cropping pattern",
+        "Acreage"
+    ],
+    "recommendation_reason": "The farmer may be eligible for KCC if they are engaged in agricultural cultivation and meet the applicable farmer eligibility requirements.",
+    "next_action": "Prepare identity, address and land or cultivation documents and approach a participating bank for KCC application.",
+    "source": "Kisan Credit Card scheme information, myScheme and RBI"
+  },
+  {
+    "scheme_name": "Soil Health Card Scheme",
+    "short_name": "SHC",
+    "category": "Soil Management",
+    "target_beneficiaries": "Farmers",
+    "benefit": "Soil nutrient information and fertilizer recommendations based on soil testing",
+    "eligibility": "Farmers can obtain soil health information and recommendations through soil testing under the Soil Health Card programme.",
+    "eligibility_rules": {
+        "is_farmer": true,
+        "requires_soil_testing": true
+    },
+    "required_information": [
+        "Farmer details",
+        "Farm details",
+        "Soil sample",
+        "Land details"
+    ],
+    "recommendation_reason": "The farmer can use the Soil Health Card service to understand soil nutrient status and receive fertilizer recommendations based on soil testing.",
+    "next_action": "Submit a soil sample through the appropriate soil testing facility and obtain the Soil Health Card.",
+    "source": "Soil Health Card Scheme"
+  },
+  {
+    "scheme_name": "Krishi Bhagya",
+    "short_name": "KRISHI_BHAGYA",
+    "category": "Rainfed Agriculture",
+    "target_beneficiaries": "Farmers practicing rainfed agriculture",
+    "benefit": "Support for climate-resilient rainfed agriculture and water management infrastructure",
+    "eligibility": "Farmers practicing rainfed agriculture may benefit from support available under the Krishi Bhagya programme, subject to applicable state guidelines and component-specific conditions.",
+    "eligibility_rules": {
+        "is_farmer": true,
+        "practices_rainfed_agriculture": true
+    },
+    "required_information": [
+        "Farmer details",
+        "Farm details",
+        "Land details",
+        "Irrigation status",
+        "Rainfed agriculture status"
+    ],
+    "recommendation_reason": "The farmer may be a potential beneficiary if they practice rainfed agriculture and meet the applicable Karnataka programme conditions.",
+    "next_action": "Verify the applicable Krishi Bhagya component and eligibility requirements through the Karnataka Agriculture Department before applying.",
+    "source": "Government of Karnataka agricultural programme information"
+}
+]
