@@ -122,6 +122,37 @@ def recommend_scheme(scheme, farmer):
     }
 
 
+# Prioritization scores
+priority_scores = {
+    "Pradhan Mantri Kisan Samman Nidhi": 5,
+    "Pradhan Mantri Fasal Bima Yojana": 4,
+    "Kisan Credit Card": 3,
+    "Soil Health Card Scheme": 2,
+    "Krishi Bhagya": 1
+}
+
+
+def recommend_all_schemes(farmer_data):
+    results = []
+
+    for scheme in schemes:
+        result = recommend_scheme(scheme, farmer_data)
+
+        if result["status"] == "ELIGIBLE":
+            result["priority"] = priority_scores[scheme["scheme_name"]]
+        else:
+            result["priority"] = 0
+
+        results.append(result)
+
+    results.sort(
+        key=lambda x: x["priority"],
+        reverse=True
+    )
+
+    return results
+
+
 # Check every scheme
 for scheme in schemes:
     result = recommend_scheme(scheme, farmer)
@@ -137,15 +168,8 @@ for scheme in schemes:
     if result["missing_requirements"]:
         print("Missing requirements:", result["missing_requirements"])
 
-# Prioritize eligible schemes
 
-priority_scores = {
-    "Pradhan Mantri Kisan Samman Nidhi": 5,
-    "Pradhan Mantri Fasal Bima Yojana": 4,
-    "Kisan Credit Card": 3,
-    "Soil Health Card Scheme": 2,
-    "Krishi Bhagya": 1
-}
+# Prioritize eligible schemes
 
 eligible_schemes = []
 
