@@ -12,6 +12,11 @@ print(df.head())
 print("\nData types:")
 print(df.dtypes)
 
+print("\nMissing values:")
+print(df.isnull().sum())
+
+print("\nDuplicate rows:", df.duplicated().sum())
+
 print("\nStatistical summary:")
 print(df.describe())
 
@@ -93,7 +98,7 @@ knn_accuracy = model_knn.score(X_test_scaled, y_test)
 
 print("\nKNN Accuracy:", knn_accuracy)
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 # Predictions
 rf_pred = model_rf.predict(X_test_scaled)
@@ -121,7 +126,6 @@ for name, predictions in models.items():
     print(f"Recall   : {recall:.4f}")
     print(f"F1 Score : {f1:.4f}")
 
-    from sklearn.metrics import confusion_matrix
 
 cm = confusion_matrix(y_test, rf_pred)
 
