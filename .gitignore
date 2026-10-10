@@ -37,3 +37,7 @@ data/processed/*
 
 data/crop_recommendation.csv
 data/crop_recommendation_cleaned.csv
+
+.env
+
+uploads/
